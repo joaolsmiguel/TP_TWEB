@@ -1,0 +1,47 @@
+h1 {
+	font-family: 'Rubik Mono One';
+	text-align: center;
+	color: #2C3A47;
+	text-decoration: overline;
+	font-style: italic;
+	text-decoration-color: #EAB543;
+}
+
+p {
+	font-family: 'B612 Mono';
+}
+
+/* SlideShow */
+.Slides {
+	width: 100%;
+	display: none;
+	border-style: dashed;
+	border-color: #EAB543;
+	position: relative;
+	left: 50%;
+	box-shadow: 10px 10px 10px #2C3A47;
+}
+
+.slideshow {
+	max-width: 700px;
+}
+
+button {
+	background: none;
+}
+
+button a {
+	border-bottom-style: solid;
+	border-bottom-color: #EAB543;
+	font-family: 'B612 Mono';
+	text-align: center;
+	font-size: 20px;
+	color: #2C3A47;
+}
+
+@media only screen and (max-width: 1014px) {
+    .slideshow {
+		width: 95%;
+    	transform: translate(-50%);
+    }
+}

@@ -1,0 +1,175 @@
+body{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+nav{
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background: #2C3A47;
+    font-family: 'B612 Mono';
+    border-bottom-style: solid;
+    border-bottom-color: #EAB543;
+}
+ul{
+    z-index: 10;
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+    height: 20px;
+    padding: 15px;
+}
+ul li{
+    font-size: 20px;
+    list-style: none;
+    display: inline;
+    margin-left: 1%;
+    color: #CAD3C8;
+    cursor: pointer;
+}
+ul li:nth-last-child(2){
+    float: right;
+}
+ul li a:hover{
+    color: #EAB543;
+}
+ul li a{
+    text-decoration: none;
+    color: #CAD3C8;
+    transition: 0.8s ease;
+}
+
+ul li a #login{
+    text-align: right;
+}
+
+.drop {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #CAD3C8;
+    font-family: 'B612 Mono';
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+
+.cont {
+    display: none;
+    font-size: 20px;
+    position: absolute;
+    background-color: #2C3A47;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-color: #EAB543;
+}
+
+.cont a {
+    color: #CAD3C8;
+}
+
+.cont a:hover {
+    color: #EAB543;
+    transition: 0.8s ease;
+}
+
+.drop:hover .cont{
+    display: block;  
+}
+
+.dropbtn:hover {
+    color: #EAB543;
+}
+
+span{
+    font-family: 'Rubik Mono One';
+    float: left;
+    color: #d63031;
+    text-decoration: overline;
+    font-size: 90%;
+    text-align: left;
+    text-shadow: 10px 3px #2C3A47;
+}
+
+.toggle{
+    z-index: 10;
+    width: 100%;
+    padding: 10px 20px;
+    background: rgba(53, 44, 44, 0.5);
+    text-align: right;
+    box-sizing: border-box;
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #2C3A47;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+    color: #EAB543;
+    font-size: 17px;
+    border-top-style: solid;
+    border-color: #EAB543;
+}
+
+footer #rs {
+    float: right;
+    letter-spacing: 5px;
+}
+
+#termina{
+    visibility: hidden;
+}
+
+@media (max-width:1014px){
+    .toggle{
+        size: 90%;
+        position: relative;
+        z-index: 10;
+        display: block;
+    }
+    ul{
+        width: 100%;
+        display: none;
+    }
+    ul li{
+        display: block;
+        text-align: center;
+    }
+    .active{
+        display: inline-block;
+    }
+
+    .drop{
+        display: block;
+    }
+
+    .dropbtn {
+        text-align: center;
+    }
+
+    ul li:nth-last-child(2){
+        float: none;
+    }
+}
+
+@media (min-height: 100%){
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
+}

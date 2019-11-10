@@ -1,0 +1,115 @@
+.cli {
+	display: block;
+}
+
+h1 {
+	font-family: 'Rubik Mono One';
+	text-align: center;
+	color: #2C3A47;
+	text-decoration: overline;
+	font-style: italic;
+	text-decoration-color: #EAB543;
+}
+
+p h3 {
+	font-family: 'B612 Mono';
+}
+
+.cli1 {
+	display: inline-table;
+	border-style: dotted;
+	width: 600px;
+	position: relative;
+	left: 10px;
+	border-radius: 15px;
+	border-color: #EAB543;
+	background-color: #2C3A47;
+	color: #CAD3C8;
+}
+
+.texto {
+	text-align: center;
+}
+
+.icon {
+	text-align: center;
+	color: #1B9CFC;
+}
+
+.cli1 img {
+	position: relative;
+	top: 10px;
+	border-radius: 50%;
+	width: 150px;
+	float: left;
+}
+
+.cli2 {
+	float: right;
+	display: inline-table;
+	border-style: dotted;
+	width: 600px;
+	position: relative;
+	right: 10px;
+	border-radius: 15px;
+	border-color: #EAB543;
+	background-color: #2C3A47;
+	color: #CAD3C8;
+}
+
+.cli2 img {
+	position: relative;
+	top: 5px;
+	border-radius: 40%;
+	width: 115px;
+	float: left;
+}
+
+.cli3 {
+	display: inline-table;
+	border-style: dotted;
+	width: 600px;
+	position: relative;
+	left: 10px;
+	border-radius: 15px;
+	border-color: #EAB543;
+	background-color: #2C3A47;
+	color: #CAD3C8;
+}
+
+.cli3 img {
+	position: relative;
+	top: 5px;
+	border-radius: 50%;
+	width: 150px;
+	float: left;
+}
+
+.cli4 {
+	float: right;
+	display: inline-table;
+	border-style: dotted;
+	width: 600px;
+	position: relative;
+	right: 10px;
+	border-radius: 15px;
+	border-color: #EAB543;
+	background-color: #2C3A47;
+	color: #CAD3C8;
+}
+
+.cli4 img {
+	position: relative;
+	top: 10px;
+	border-radius: 50%;
+	width: 115px;
+	float: left;
+}
+
+@media only screen and (max-width: 1014px) {
+	.cli1, .cli2, .cli3, .cli4 {
+		width: 40%;
+	}
+	.cli4 {
+	} 
+}	

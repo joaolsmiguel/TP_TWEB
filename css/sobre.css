@@ -1,0 +1,181 @@
+h1 {
+	font-family: 'Rubik Mono One';
+	text-align: center;
+	color: #2C3A47;
+	text-decoration: overline;
+	font-style: italic;
+	text-decoration-color: #EAB543;
+}
+
+div {
+	display: inline-table;
+}
+
+h2 {
+	text-decoration: underline; 
+	font-style: italic;
+	font-family: 'Rubik Mono One'
+}
+
+p, h2 {
+	font-family: 'B612 Mono';
+}
+
+.t1 {
+	border-style: dashed;
+	background-color: #d63031;
+	color: #CAD3C8;
+	box-shadow: 1px 2px 4px #2C3A47;
+	border-color: #2C3A47;
+	overflow: hidden;
+}
+
+.t1 img {
+	position: relative;
+	float: right;
+	width: 15%;
+	top: -40px;
+	right: 20px;
+	transform: rotate(10deg);
+}
+
+.t1 p {
+	margin: auto;
+	text-align: center;
+}
+
+.t1 h2 {
+	text-align: left;
+}
+
+.t2 {
+	color: #CAD3C8;
+	border-style: dashed;
+	background-color: #2C3A47;
+	border-color: #EAB543;
+	box-shadow: 1px 2px 4px #d63031;
+	overflow: hidden;
+}
+
+.t2 img {
+	position: relative;
+	float: left;
+	width: 20%;
+	left: 10px;
+	transform: rotate(-10deg); 
+	top: -40px;
+}
+
+.t2 p {
+	margin: auto;
+	text-align: center;
+}
+
+.t2 h2 {
+	position: relative;
+	text-align: right;
+	right: 10px;
+	text-decoration-color: #EAB543;
+}
+
+.t3 {
+	border-style: dashed;
+	border-color: #2C3A47;
+	background-color: #d63031;
+	color: #CAD3C8;
+	box-shadow: 1px 2px 4px #2C3A47;
+	overflow: hidden;
+}
+
+.t3 img {
+	float: right;
+	width: 20%;
+	top: -40px;
+	right: 20px;
+	transform: rotate(10deg);
+}
+
+.t3 p {
+	margin: auto;
+	text-align: center;
+}
+
+.t3 h2 {
+	text-align: left;
+}
+
+.t4 {
+	color: #CAD3C8;
+	border-style: dashed;
+	background-color: #2C3A47;
+	border-color: #EAB543;
+	box-shadow: 1px 2px 4px #d63031;
+	text-align: center;
+}
+
+.t4 h2 {
+	position: relative;
+	text-decoration-color: #EAB543;
+}
+
+.maps {
+	position: relative;
+	left: 10px;
+	bottom: 10px;
+	float: left;
+	display: border-box;
+	text-align: center;
+	border-style: dotted;
+	color: #CAD3C8;
+}
+
+/* SlideShow */
+
+.Slides {
+	width: 100%;
+	display: none;
+}
+
+.show {
+	box-sizing: border-box;
+	border-style: dotted;
+	border-color: #CAD3C8;
+	position: relative;
+	float: right;
+	right: 10px;
+	bottom: 10px;
+}
+
+.slideshow {
+	max-width: 700px;
+}
+
+.pontos {
+	text-align: center;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+@media only screen and (max-width: 1014px) {
+    .maps {
+    	display: none;
+    }
+    .show {
+    	width: 70%;
+    	right: 15%;
+    }
+}
+

@@ -1,0 +1,61 @@
+h1{
+    font-family: 'Rubik Mono One';
+    text-align: center;
+    color: #2C3A47;
+    text-decoration: overline;
+    font-style: italic;
+    text-decoration-color: #EAB543;
+}
+p {
+    position: relative;
+    font-family: 'B612 Mono';
+    text-align: center;
+    color: #2C3A47;
+}
+
+/* formulario */
+form {
+    border-style: dashed;
+    width: 500px;
+    position: absolute;
+    left: 30%;
+    border-radius: 3px;
+    border-color: #EAB543;
+    border-width: 5px;
+    margin: 50px;
+    padding: 15px;
+    text-align: center;
+    background-color: #2C3A47;
+    color: #CAD3C8;
+    z-index: -1;
+}
+
+form input {
+    display: inline-block;
+    align-content: center;
+    border: none;
+    background: none;
+    color: #CAD3C8;
+    border-bottom-style: solid;
+    border-width: 3px;
+    border-color: #d63031;
+    outline: none;
+}
+
+textarea {
+    background: none;
+    border-color: #EAB543;
+    color: #CAD3C8;
+    outline: none;
+}
+
+@media only screen and (max-width: 1014px) {
+    form {
+        width: 80%;
+        top: auto;
+        left: -10%;
+    }
+    textarea {
+        width: 80%;
+    }
+}

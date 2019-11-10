@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Rubik Mono One' rel='stylesheet'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/layout.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/clientes.css" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://autodromodoalgarve.com/wp-content/themes/autodromodoalgarve/public/media/images/favicons/android-icon-192x192.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Rubik Mono One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=B612 Mono' rel='stylesheet'>
+    <script src="../jquery/btn_movel.js"></script>
+    <script src="../js/if_login.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+<body onload="check2();" style="margin-bottom:50px;">
+    <nav>
+        <div class="toggle">
+            <div class="menu">
+                <span>Web on Wheels</span>
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <ul class="lista_menu">
+            <li><a href="../index.html"><i id="icon" class="fas fa-home"></i> Home</a></li>
+            <li class="drop">
+                <button class="dropbtn"><i id="icon" class="fas fa-users"></i>A Empresa</button>
+                <div class="cont">
+                  <a href="sobre.html"><i class="far fa-address-card">Quem somos?</i></a>
+                  <a href="clientes.html"><i class="far fa-comments">Os nossos clientes</i></a>
+                </div>
+             </li>
+            <li class="drop">
+                <button class="dropbtn"><i class="fas fa-car-crash"></i>Eventos</button>
+                <div class="cont">
+                    <a href="eventos.html"><i class="fas fa-car-alt"></i>Eventos</a>
+                    <a href="orcamentos.html"><i class="far fa-money-bill-alt">Orçamentos</i></a>
+                </div>
+            <li><a id="login" href="../login/login.html"><i id="icon" class="far fa-user-circle"></i> Login/Registar</a></li>
+            <li id="termina"><a onclick="termina_sessao();" href="">Terminar sessão</a></li>
+        </ul>
+    </nav>
+    <h1>Os Nossos Clientes</h1>
+    <h3>Ainda tens dúvidas? Então vê o que é que é que os nossos clientes tem a dizer</h3>
+    <div class="cli">
+        <div class="cli1">
+            <img src="../img/p1.jpg">
+            <p class="nome">Filipe Albuquerque</p>
+            <p class="texto">Uma da melhores, senão a melhor pista do mundo, tem tudo o que um piloto procura, deste curvas e contra-curvas, subidas e descidas, é uma éspecia de 1000 em 1. A Escola de Pilotagem é das melhores, super simpaticos e ensinam até os truques mais pequenos.</p>
+            <div class="icon">
+                <i class="fas fa-comment"> 1,5k</i>
+                <i class="fas fa-retweet"> 106k</i>
+                <i class="fas fa-heart"> 80k</i>
+                <i class="fas fa-envelope"></i>
+            </div>    
+        </div>
+        <div class="cli2">
+            <img src="../img/p2.JPG">
+            <p class="nome">Tiago Monteiro</p>
+            <p class="texto">Nem preciso de falar da pista em si, ja todos a conhecemos por ser única no mundo. Os meus parabéns à Web on Wheels pelas experiências que consegueguiram criar para entreter todos, desde os mais novos aos mais velhos. Passem por lá</p>
+            <div class="icon">
+                <i class="fas fa-comment"> 5k</i>
+                <i class="fas fa-retweet"> 400k</i>
+                <i class="fas fa-heart"> 300k</i>
+                <i class="fas fa-envelope"></i>
+            </div>    
+        </div>
+        <br>
+        <br>
+        <div class="cli3">
+            <img src="../img/p3.jpg">
+            <p class="nome">Diogo Vilhena</p>
+            <p class="texto">ADOREI!! Staff Super simpática e pronta ajudar, devo dizer como aluno da escola melhor é dificil de arranjar</p>
+            <div class="icon">
+                <i class="fas fa-comment"> 10k</i>
+                <i class="fas fa-retweet"> 1000k</i>
+                <i class="fas fa-heart"> 500k</i>
+                <i class="fas fa-envelope"></i>
+            </div>    
+        </div>
+        <div class="cli4">
+            <img src="../img/p4.jpg">
+            <p class="nome">João Miguel</p>
+            <p class="texto">Como já competi por tantas pistas, esta é das melhores do mundo sem duvida nenhuma. Se nao fosse a oportunidade que a Web on Wheels me deu teria de ir para outro pais uma vez que é a unica escola cá em Portugal </p>
+            <div class="icon">
+                <i class="fas fa-comment"> 3,5k</i>
+                <i class="fas fa-retweet"> 500k</i>
+                <i class="fas fa-heart"> 1000k</i>
+                <i class="fas fa-envelope"></i>
+            </div>    
+        </div>
+    </div>    
+    <footer>
+        <i class="fas fa-phone"></i>282 405 600 <i class="fas fa-envelope"></i>kia@parkalgar.com <i class="fab fa-facebook-f" id="rs"></i> <i class="fab fa-instagram" id="rs"></i> <i class="fab fa-youtube" id="rs"></i>
+    </footer>      
+</body>
+</html>

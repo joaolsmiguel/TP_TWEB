@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://autodromodoalgarve.com/wp-content/themes/autodromodoalgarve/public/media/images/favicons/android-icon-192x192.png">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web on Wheels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/home.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/layout.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Rubik Mono One' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=B612 Mono' rel='stylesheet'>
+    <script src="./js/if_login.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./jquery/btn_movel.js"></script>
+</head>
+<body onload="check1();">
+    <nav>
+        <div class="toggle">
+            <div class="menu">
+                <span>Web on Wheels</span>
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <ul class="lista_menu">
+            <li><a href=""><i id="icon" class="fas fa-home"></i> Home</a></li>
+            <li class="drop">
+                <button class="dropbtn"><i id="icon" class="fas fa-users"></i>A Empresa</button>
+                <div class="cont">
+                  <a href="./empresa/sobre.html"><i class="far fa-address-card">Quem somos?</i></a>
+                  <a href="./empresa/clientes.html"><i class="far fa-comments">Os nossos clientes</i></a>
+                </div>
+             </li>
+            <li class="drop">
+                <button class="dropbtn"><i class="fas fa-car-crash"></i>Eventos</button>
+                <div class="cont">
+                    <a href="./empresa/eventos.html"><i class="fas fa-car-alt"></i>Eventos</a>
+                    <a href="./empresa/orcamentos.html"><i class="far fa-money-bill-alt">Orçamentos</i></a>
+                </div>
+            <li><a id="login" href="./login/login.html"><i id="icon" class="far fa-user-circle"></i> Login/Registar</a></li>
+            <li id="termina"><a onclick="termina_sessao();" href="">Terminar sessão</a></li>
+        </ul>
+    </nav>
+    <br>
+    <div class="container">
+        <img src="./img/home.jpg" alt="carro" class="image">
+        <div class="overlay">
+            <div class="text">Web on Wheels</div>
+        </div>
+    </div>
+</body>
+</html>

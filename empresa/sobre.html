@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Rubik Mono One' rel='stylesheet'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/layout.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/sobre.css" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://autodromodoalgarve.com/wp-content/themes/autodromodoalgarve/public/media/images/favicons/android-icon-192x192.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Rubik Mono One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=B612 Mono' rel='stylesheet'>
+    <script src="../js/login.js"></script>
+    <script src="../jquery/btn_movel.js"></script>
+    <script src="../js/if_login.js"></script>
+    <script src="../js/slide.js"></script>
+</head>
+<body onload="check2(), showSlides(1);" style="margin-bottom:50px;">
+    <nav>
+        <div class="toggle">
+            <div class="menu">
+                <span>Web on Wheels</span>
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <ul class="lista_menu">
+            <li><a href="../index.html"><i id="icon" class="fas fa-home"></i> Home</a></li>
+            <li class="drop">
+                <button class="dropbtn"><i id="icon" class="fas fa-users"></i>A Empresa</button>
+                <div class="cont">
+                  <a href="sobre.html"><i class="far fa-address-card">Quem somos?</i></a>
+                  <a href="clientes.html"><i class="far fa-comments">Os nossos clientes</i></a>
+                </div>
+             </li>
+            <li class="drop">
+                <button class="dropbtn"><i class="fas fa-car-crash"></i>Eventos</button>
+                <div class="cont">
+                    <a href="../empresa/eventos.html"><i class="fas fa-car-alt"></i>Eventos</a>
+                    <a href="orcamentos.html"><i class="far fa-money-bill-alt">Orçamentos</i></a>
+                </div>
+            <li><a id="login" href="../login/login.html"><i id="icon" class="far fa-user-circle"></i> Login/Registar</a></li>
+            <li id="termina"><a onclick="termina_sessao();" href="">Terminar sessão</a></li>
+        </ul>
+    </nav>
+    <h1>A Nossa História</h1>
+    <div class="t1">
+        <h2>Como é que começou?</h2>
+        <img src="../img/senna.jpg">
+        <p>Comecamos com um par de 2 malucos que desde que pequeninos queriam ser o proximo Airton Senna, 2 pessoas que passsaram horas e horas a devorar tudo o que tivesse óleo la para o meio.</p>
+    </div>
+    <br>
+    <br>
+    <div class="t2">    
+        <h2>A Ideia</h2>
+        <img src="../img/t2.jpg">
+        <p>A Nossa ideia partiu de ver os nossos pequenos fãs e pensamos com os nossos botões "Se nós conseguimos, eles também conseguem" a partir dai comecamos a falar com todos os nossos contactos e a mover mundos e fundos para agora pudermos oferecer a todos a possibilidade de verem o seu sonho de ser um piloto profissional realizado.</p>
+    </div>
+    <br>
+    <br>
+    <div class="t3">    
+        <h2>O que é que oferecemos?</h2>
+        <img src="../img/rs.jpg">
+        <p>Da-mos a todos a possibilidade de puderem criar as suas próprias corridas, quer de Karts (não so para os mais novos) como de carros "a sério" digamos assim, como tambem oferecemos a possiblidade de fazerem test drives, apresentações (uma área mais para empresas que estejam interessadas) e tambem o nosso maior projeto a escola de pilotagem onde as crianças e jovens podem aprender os fundamentos e por as aprendizagens em pista em torneios e campeonatos. Quem sabe nao está por ai o proximo campeão mundial de Fórmula 1.</p>
+    </div>
+    <br>
+    <br>
+    <div class="t4">
+        <h2>Mas onde é que andamos?</h2>
+        <p>Tudo isto que disponibilizamos é graças á parceria que temos com o Autódromo do Algarve, um dos melhores circuitos não só na Europa como no mundo, onde achamos ser o sitio ideial para aspirantes, mestres e curiosos.
+        Contamos com uma equipa de 30 elementos distribuidos pelas diferentes áreas (escola de pilotagem, apresentações, etc).</p>
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.6900135350465!2d-8.63051628521692!3d37.23133307986207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b249a14a3de87%3A0x5eb2446732b74a50!2sAut%C3%B3dromo+Internacional+do+Algarve!5e0!3m2!1spt-PT!2spt!4v1546186912533" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <p>Autódromo Internacional do Algarve</p>
+        </div>
+        <!-- SlideShow -->
+        <div class="show" style="padding-bottom: 20px;">
+            <div class="slideshow">
+                <img class="Slides" src="../img/a1.jpg">
+                <img class="Slides" src="../img/a3.jpg">
+                <img class="Slides" src="../img/a4.jpg">
+            </div>
+            <br>
+            <div class="pontos">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>     
+            </div>
+        </div>  
+    <footer style="bottom: 0; position:fixed;">
+        <i class="fas fa-phone"></i>282 405 600 <i class="fas fa-envelope"></i>kia@parkalgar.com <i class="fab fa-facebook-f" id="rs"></i> <i class="fab fa-instagram" id="rs"></i> <i class="fab fa-youtube" id="rs"></i>
+    </footer>      
+</body>
+</html>

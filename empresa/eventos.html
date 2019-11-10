@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Eventos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Rubik Mono One' rel='stylesheet'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/layout.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/eventos.css" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://autodromodoalgarve.com/wp-content/themes/autodromodoalgarve/public/media/images/favicons/android-icon-192x192.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=B612 Mono' rel='stylesheet'>
+    <script src="../jquery/btn_movel.js"></script>
+    <script src="../js/if_login.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/slide.js"></script>
+</head>
+<body onload="check2(),showSlides(1);">
+    <nav>
+        <div class="toggle">
+            <div class="menu">
+                <span>Web on Wheels</span>
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <ul class="lista_menu">
+            <li><a href="../index.html"><i id="icon" class="fas fa-home"></i> Home</a></li>
+            <li class="drop">
+                <button class="dropbtn"><i id="icon" class="fas fa-users"></i>A Empresa</button>
+                <div class="cont">
+                <a href="sobre.html"><i class="far fa-address-card">Quem somos?</i></a>
+                <a href="clientes.html"><i class="far fa-comments">Os nossos clientes</i></a>
+                </div>
+            </li>
+            <li class="drop">
+                <button class="dropbtn"><i class="fas fa-car-crash"></i>Eventos</button>
+                <div class="cont">
+                    <a href="./eventos.html"><i class="fas fa-car-alt"></i>Eventos</a>
+                    <a href="orcamentos.html"><i class="far fa-money-bill-alt">Orçamentos</i></a>
+                </div>
+            <li><a id="login" href="../login/login.html"><i id="icon" class="far fa-user-circle"></i> Login/Registar</a></li>
+            <li id="termina"><a onclick="termina_sessao();" href="">Terminar sessão</a></li>
+        </ul>
+    </nav>
+    <h1>Os nossos eventos</h1>
+    <p>Aqui podes ver alguns dos eventos que realizamos anteriormente, eventos como apresentações, corridas (privadas e de campeonatos) e até da escola de pilotagem.</p>
+    <!-- SlideShow -->
+    <div class="show">
+        <div class="slideshow">
+            <img class="Slides" src="../img/slide1.jpg">
+            <img class="Slides" src="../img/slide2.jpg">
+            <img class="Slides" src="../img/slide3.jpg">
+        </div>
+        <br>    
+    </div>
+    <br>
+    <p>Queres ser o próximo a aparecer aqui? Entra em contacto connosco pelo seguinte formulário:</p>
+    <button><a href="./orcamentos.html">Orçamentos</a></button>
+</body>
+</html>

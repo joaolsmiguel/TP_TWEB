@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Rubik Mono One' rel='stylesheet'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/layout.css" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://autodromodoalgarve.com/wp-content/themes/autodromodoalgarve/public/media/images/favicons/android-icon-192x192.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/orca.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=B612 Mono' rel='stylesheet'>
+    <script src="../jquery/btn_movel.js"></script>
+    <script src="../js/if_login.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+<body onload="check2();">
+    <nav>
+        <div class="toggle">
+            <div class="menu">
+                <span>Web on Wheels</span>
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <ul class="lista_menu">
+            <li><a href="../index.html"><i id="icon" class="fas fa-home"></i> Home</a></li>
+            <li class="drop">
+                <button class="dropbtn"><i id="icon" class="fas fa-users"></i>A Empresa</button>
+                <div class="cont">
+                  <a href="sobre.html"><i class="far fa-address-card">Quem somos?</i></a>
+                  <a href="clientes.html"><i class="far fa-comments">Os nossos clientes</i></a>
+                </div>
+             </li>
+            <li class="drop">
+                <button class="dropbtn"><i class="fas fa-car-crash"></i>Eventos</button>
+                <div class="cont">
+                    <a href="eventos.html"><i class="fas fa-car-alt"></i>Eventos</a>
+                    <a href="orcamentos.html"><i class="far fa-money-bill-alt">Orçamentos</i></a>
+                </div>
+            <li><a id="login" href="../login/login.html"><i id="icon" class="far fa-user-circle"></i> Login/Registar</a></li>
+            <li id="termina"><a onclick="termina_sessao();" href="">Terminar sessão</a></li>
+        </ul>
+    </nav>
+    <h1>Cria o teu Evento</h1>
+    <p>Queres fazer a tua própria corrida, com os teus amigos? Ou talvez queres te tornar o próximo Ronaldo por de trás do volante.</p>
+    <p>Não te preocupes nós ajudamos, basta preencheres este formulário e nós contactamos-te</p>
+    <div class="container">
+        <form>
+            Nome: <input type="text" name="Nome" id="nome" placeholder="Diogo Vilhena" align="right" required><br>
+            <br>
+            Sexo <input type="radio" name="Sexo" required="">Masculino
+            <input type="radio" name="Sexo">Feminino <br>
+            <br>
+            Cartão de Identificação: <input type="number" name="cc" placeholder="ex: 14833614" required><br>
+            <br>
+            Idade: <input type="number" name="idade" required><br>
+            <br>
+            E-mail: <input type="email" name="email" placeholder="@isec.pt" required><br>
+            <br>
+            Morada: <input type="text" name="morada" required><br>
+            <br>
+            Tipo de evento:<br><input type="radio" name="evento" required="">Corrida<br><input type="radio" name="evento">Test Drive<br><input type="radio" name="">Escola de Pilotos<br><input type="radio" name="evento">Apresentações<br> 
+            <br>
+            Descreva o seu evento: <textarea name="texto" rows="5" cols="40" required></textarea>
+            <br><br>
+            <input type="submit" value="Submeter">
+        </form>
+    </div>
+</body>
+</html>

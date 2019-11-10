@@ -1,0 +1,188 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 90%;
+  background: url(../img/norvia_18_4.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+  font-family: 'Rubik Mono One';
+}
+
+#bg{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(53, 45, 45, 0.767);
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+}
+
+.caixa{
+  width: 350px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #636e72;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.caixa h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500px;
+  text-decoration: overline;
+  font-style: italic;
+  text-decoration-color: #EAB543;
+  color: #2C3A47;
+}
+
+.caixa input[type = "text"], .caixa input[type = "password"], .caixa input[type = "email"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #EAB543;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: #f7f1e3;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.caixa input[type = "text"]:focus,.caixa input[type = "password"]:focus,.caixa input[type = "email"]:focus{
+  width: 280px;
+  border-color: #F8EFBA;
+}
+.caixa input[type = "submit"], #volta, #submit{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #EAB543;
+  padding: 14px 40px;
+  outline: none;
+  color: #f7f1e3;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.caixa input[type = "submit"]:hover{
+  background: #2C3A47;
+}
+
+.caixa #volta, #submit{
+  size: 10%;
+}
+
+.caixa #volta:hover, #submit:hover{
+  background: #2C3A47;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#regista{
+  position: absolute;
+  top: 50%;
+  left: 90%;
+}
+
+#esquece{
+  position: absolute;
+  top: 50%;
+  right: 90%;
+}
+
+#registo {
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  background-color: #636e72;
+  width: 30%;
+  height: 40px;
+  line-height: 40px;
+}
+
+#registo:after {
+  color: #636e72;
+  border-left: 20px solid;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  display: inline-block;
+  content: '';
+  position: absolute;
+  right: -20px;
+  top:0
+}
+
+#esquece {
+  position: absolute;
+  top: 50%;
+  right: 85%;
+  background-color: #636e72;
+  width: 30%;
+  height: 40px;
+  line-height: 40px;
+}
+
+#esquece:after {
+  color: #636e72;
+  border-left: 20px solid;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  display: inline-block;
+  content: '';
+  position: absolute;
+  left: -20px;
+  top:0;
+  transform: rotate(180deg);
+}
+
+.caixa input[type = "text"]::placeholder,.caixa input[type = "password"]::placeholder,.caixa input[type = "email"]::placeholder{
+  color: white;
+}
+
+#esquece_movel, #registo_movel{
+  display: none;
+}
+
+@media (max-width: 1014px){
+  .caixa{
+    size: 80%;
+    padding: 10px;
+  }
+  #esquece, #registo{
+    visibility: hidden;
+    display: none;
+  }
+  #esquece_movel, #registo_movel{
+      display: inline-block;
+      text-align: center;
+      border: 2px solid #d63031;
+      background-color: rgba(255, 45, 45, 0.5);
+      color: #f7f1e3;
+      cursor: pointer;
+      border-radius: 20px;
+      margin: 15px auto;
+      padding: 5px 30px;
+  }
+  #esquece_movel{
+    float: left;
+  }
+  #registo_movel{
+    float: right;
+  }
+}
+
